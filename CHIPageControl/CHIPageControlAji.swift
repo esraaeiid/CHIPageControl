@@ -69,7 +69,8 @@ open class CHIPageControlAji: CHIBasePageControl {
         active.frame = frame
 
         inactive.enumerated().forEach() { index, layer in
-            layer.backgroundColor = self.tintColor(position: index).withAlphaComponent(self.inactiveTransparency).cgColor
+            layer.backgroundColor = UIColor.white.cgColor
+            //self.tintColor(position: index).withAlphaComponent(self.inactiveTransparency).cgColor
             if self.borderWidth > 0 {
                 layer.borderWidth = self.borderWidth
                 layer.borderColor = self.tintColor(position: index).cgColor
